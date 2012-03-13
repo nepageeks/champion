@@ -1,0 +1,36 @@
+/*
+This is Eric Meyer's CSS Reset. 
+(http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/)  It's pretty
+harsh, but serves as a clear-all for browser-imposed CSS styles.  If you wish to
+perform your own CSS reset, comment out this line.
+*/
+
+@import url("/css/reset.css");
+
+p {
+  padding: 0 0 13px 0;
+}
+th, td {
+  padding: 5px;
+}
+textarea {
+  height: 150px;
+  overflow: auto;
+  width: 550px;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#footer {
+  clear:both;
+  padding: 10px;
+  text-align: center;
+}

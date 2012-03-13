@@ -1,0 +1,1 @@
+All content &copy; 2012<? if (date('Y') > '2012') echo ' - '.date('Y'); ?> <?=PROJECT_NAME?>

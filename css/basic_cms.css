@@ -1,0 +1,12 @@
+/*
+   CSS Styles for Basic CMS Project Extender
+   Version 0.3
+*/
+
+#edit_page_form textarea {
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	padding: 3px;
+  width: 87%;
+	height: 250px;
+}

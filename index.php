@@ -26,27 +26,7 @@ include(ROOT.'/inc/header.php');
 
 <div class="readmoreimg"><a href="about.php"><img src="images/readmore.png" alt="Read More..." title="Read More &rarr;" /></a></div>
 
-<h2>About Us</h2>
-
-<p>Champion Builders, Inc. was founded in May of 1986 and since that time has grown to be one of the premier general contractors in the Eastern Region of Pennsylvania.</p>
-
-<p>Champion is a full-service general contractor and services include:</p>
-
-<ul>
-<li>Land Selection</li>
-<li>Permit Processing</li>
-<li>Architectural and Engineering Services</li>
-<li>General Construction</li>
-</ul>
-
-Champion's construction services also include:
-
-<ul>
-<li>New Construction</li>
-<li>Warehousing</li>
-<li>Healthcare Construction, Interior and Experior Renovations</li>
-<li>Renovations</li>
-</ul>
+<?=String::truncate(BasicCms::block('about'), 500, '')?>
 
 <!--<div class="readmore"><a href="">Read More</a> &rarr;</div>-->
 

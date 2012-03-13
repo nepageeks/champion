@@ -2,6 +2,9 @@
 /* Make sure this require() points to config.php. */
 require('./inc/config.php');
 
+$title="(570) 283-2529 | Kingston, PA";
+$bg="green";
+
 include(ROOT.'/inc/header.php');
 ?>
 

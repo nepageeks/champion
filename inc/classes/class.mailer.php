@@ -31,7 +31,6 @@ class Mailer
     if (empty($this->text_body) && empty($this->html_body)) { trigger_error('Loaded neither text nor HTML mailers', E_USER_ERROR); }
     if (empty($this->html_body)) { $this->html_body = wordwrap($this->text_body); }
     if (empty($this->text_body)) { $this->text_body = trim(strip_tags($this->html_body)); }
-    var_dump($this);
     }
     
     public function headers($headers)
@@ -41,6 +40,8 @@ class Mailer
     
     public function send()
     {
+      // Mail_MIME
+      
       include('Mail.php');
       include('Mail/mime.php');
       
@@ -54,6 +55,19 @@ class Mailer
       
       $mail_object =& Mail::factory('mail');
       $mail_object->send($this->headers['To'], $headers, $body);
+      
+      // mail()
+      
+      // $to  = $this->headers['To'];
+      // $subject = $this->headers['Subject'];
+      // $message = $this->html_body;
+      // $headers  = 'MIME-Version: 1.0' . "\r\n";
+      // $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+      // foreach ($this->headers as $name => $value) {
+      //   $headers .= "$name: $value\r\n";
+      // }
+      // 
+      // mail($to, $subject, $message, $headers);
     }
     
     private function parse_to_string($mailer, $data)

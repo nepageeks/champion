@@ -184,7 +184,7 @@ class FormBuilder
     $this->prepare_attributes($options);
     
     // Build <input> element
-    $input = "<input type=\"{$options['type']}\" name=\"{$options['name']}\" id=\"{$options['id']}\" value=\"{$options['value']}\" {$options['classes']}/>";
+    $input = "<input type=\"{$options['type']}\" name=\"{$options['name']}\" id=\"{$options['id']}\" value=\"{$options['value']}\" {$options['classes']} {$options['options']}/>";
     $input .= "\n";
     
     // Build wrapper

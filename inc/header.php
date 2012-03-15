@@ -34,7 +34,7 @@ $(document).ready(function() {
 
 <body>
 
-<div class="container <?php echo($bg);?>">
+<div class="container <?php if (isset($bg)) { echo $bg; }?>">
 <div class="header">
 <a href="/" title="Champion Builders, Inc."><img src="images/champion-logo2.png" class="logo" title="Champion Builders, Inc. - Kingston, PA" alt=""/></a>
 <div class="slogan">

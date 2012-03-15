@@ -29,7 +29,11 @@ $admin_links = array(
   'Manage Files' => array(
     'path' => 'cms_files',
     'auth' => 'admin'
-    ),       
+    ),    
+  'View Contact' => array(
+    'path' => 'contact',
+    'auth' => 'admin'
+    ),   
   'Manage Blocks' => array(
     'path' => 'blocks',
     'auth' => 'su'

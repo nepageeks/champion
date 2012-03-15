@@ -3,7 +3,7 @@
 //@ http://jsfromhell.com
 
 class String {
-	public static function truncate($text, $length, $suffix = '&hellip;', $isHTML = true){
+	public static function truncate($text, $length = 50, $suffix = '&hellip;', $isHTML = true){
 		$i = 0;
 		$simpleTags=array('br'=>true,'hr'=>true,'input'=>true,'image'=>true,'link'=>true,'meta'=>true);
 		$tags = array();

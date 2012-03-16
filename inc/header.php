@@ -57,3 +57,5 @@ General Contracting &bull; Construction Management Services<br />
 <li style="width: 100px; background: none;"><a <?php if ($title=="Contact Us") echo "id=\"currentpage\""; ?> href="/contact.php" title="Contact Us">Contact Us</a></li>
 </ul>
 </div>
+
+<?=Flash::display()?>

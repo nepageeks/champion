@@ -29,12 +29,17 @@ switch ($action)
       $postQuery .= '\');';
       $success = mysql_query($postQuery);
       
+      Flash::add('success', 'Thanks for your submission. We\'ll contact you shortly.');
+      
       $URL = '/contact.php';
       break;
       
     case 'quote':
       $quote = new Quote;
       $quote->create($_POST['quote']);
+      
+      Flash::add('success', 'Thanks for your submission. We\'ll contact you shortly.');
+      
       $URL = '../quote.php';
       break;
       

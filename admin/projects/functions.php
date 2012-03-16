@@ -10,6 +10,22 @@ switch ($action)
     case 'new':
       $project = new Project;
       $project->create($_POST['project']);
+      if (isset($_FILES['photo'])) {
+        $upload = new Upload();
+        $upload->SetFileName($_FILES['photo']['name']);
+        $upload->SetTempName($_FILES['photo']['tmp_name']);
+        $upload->SetUploadDirectory(ROOT.'/photos/'.$project->id.'/');
+        $upload->SetValidExtensions(array('gif', 'jpg', 'jpeg', 'png'));
+        if ($upload->UploadFile()) {
+          $p = new Photo;
+          $photo['project_id'] = $project->id;
+          $photo['name'] = $upload->GetFileName();
+          $photo['position'] = count($p->find_by_project_id($photo['project_id'])) + 1;
+          $photo['created_at'] = $todayDate;
+          $photo['updated_at'] = $todayDate;
+          $p->create($photo);
+        }
+      }
       $URL = './index.php';
       break;
       

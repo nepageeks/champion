@@ -12,8 +12,12 @@ include(ROOT.'/inc/admin/header.php');
 <p><a href="./">Back to Projects</a></p>
 
 <div id="projects_new">
-  <?php $form = new FormBuilder(array('model' => 'project', 'action' => 'new', 'method' => 'post')); ?>
+  <?php $form = new FormBuilder(array('model' => 'project', 'action' => 'new', 'method' => 'post', 'options' => 'enctype="multipart/form-data"')); ?>
     <?php include './_form.php'; ?>
+    <p>
+      <label for="photo">Photo</label>
+      <input type="file" name="photo" id="photo" />
+    </p>
     <?=$form->submit(array('value' => 'Add'))?>
   <?=$form->end()?>
 </div>

@@ -52,6 +52,24 @@ switch ($action)
       $URL = './photos.php?id='.$_POST['project_id'];
       break;
       
+    case 'photo_delete':
+      parse_str(parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY));
+      $photo = new Photo;
+      $photo = $photo->find($id);
+      $project_id = $photo->project_id;
+      unlink(ROOT.'/photos/'.$project_id.'/'.$photo->name);
+      $photo->delete();
+      
+      $photos = new Photo;
+      $photos = $photos->order_by('position')->find_by_project_id($project_id);
+      foreach ($photos as $i => $photo) {
+        $photo->position = $i + 1;
+        $photo->save();
+      }
+      
+      $URL = './photos.php?id='.$project_id;
+      break;
+      
     default:
       break;
   }

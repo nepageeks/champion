@@ -24,6 +24,7 @@ $project = $project->find($_GET['id']);
       <tr>
         <td><img src="./image.php?image=<?=urlencode('/photos/'.$project->id.'/'.$photo->name)?>" /></td>
         <td><?=$photo->name?></td>
+        <td><a href="./functions.php?f=photo_delete&amp;id=<?=$photo->id?>" class="confirm">Delete</a></td>
       </tr>
     <?php } ?>
     <tr>

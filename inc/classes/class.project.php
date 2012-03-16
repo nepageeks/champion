@@ -13,5 +13,9 @@ class Project extends NORM
   function _completion_date($date) {
     return date('Y-m-d', strtotime($date));
   }
+  function photo() {
+    $p = new Photo;
+    return $p->order_by('position')->first_by_project_id($this->id);
+  }
 }
 ?>

@@ -25,6 +25,11 @@ switch ($action)
       parse_str(parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY));
       $project = new Project;
       $project = $project->find($id);
+      foreach ($project->photos as $photo) {
+        unlink(ROOT.'/photos/'.$id.'/'.$photo->name);
+        $photo->delete();
+      }
+      unlink(ROOT.'/photos/'.$id.'/');
       $project->delete();
       $URL = './index.php';
       break;
@@ -39,7 +44,7 @@ switch ($action)
         $p = new Photo;
         $photo['project_id'] = addslashes($_POST['project_id']);
         $photo['name'] = $upload->GetFileName();
-        $photo['position'] = $p->count + 1;
+        $photo['position'] = count($p->find_by_project_id($photo['project_id'])) + 1;
         $photo['created_at'] = $todayDate;
         $photo['updated_at'] = $todayDate;
         $p->create($photo);

@@ -17,9 +17,9 @@ $projects = $projects->find();
 <?php foreach ($projects as $project) { ?>
 <div><a href=""><img src="/photos/<?=$project->id?>/<?=$project->photo->name?>" style="width: 300px; height: 150px;" alt="" /></a>
   <big><?=$project->title?></big>
-  <?=$project->location?> / 65,000 sq. ft.
-  <small>Pre-engineered, New Addition</small>
-  <span>Project Completion: <b>4 Months Early</b></span> 
+  <?=$project->location?> / <?=$project->size?> sq. ft.
+  <small><?=$project->type?>, <?=$project->construction?></small>
+  <span>Project Completion: <b><?=$project->status?></b></span> 
 </div>
 <?php } ?>
 

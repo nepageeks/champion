@@ -25,6 +25,7 @@ class NORM
   function __construct($options = null)
   {
     $this->config->associations = array();
+    $this->config->validations = array();
     
     if (isset($options['table_name'])) {
       $this->config->table_name = $options['table_name'];

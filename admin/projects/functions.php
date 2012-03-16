@@ -77,6 +77,7 @@ switch ($action)
         $photo->position = $index + 1;
         $photo->save();
       }
+      exit;
       break;
       
     default:

@@ -48,10 +48,12 @@ include(ROOT.'/inc/header.php');
 <div class="testimonial">
 <div class="testimonial-bg">
 
-<?php $testimonial = new Testimonial; $testimonial = $testimonial->random; ?>
+<?php $testimonial = new Testimonial; $testimonial = $testimonial->random; if (!empty($testimonial)) { ?>
 <big>&#8220;</big><?=$testimonial->text?><big>&#8221;</big>
 
 <span><?=$testimonial->name?>, <?=$testimonial->company?></span>
+
+<?php } ?>
 
 </div>
 </div>

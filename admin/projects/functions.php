@@ -70,6 +70,15 @@ switch ($action)
       $URL = './photos.php?id='.$project_id;
       break;
       
+    case 'photo_sort':
+      foreach ($_POST['photo'] as $index => $id) {
+        $photo = new Photo;
+        $photo = $photo->find($id);
+        $photo->position = $index + 1;
+        $photo->save();
+      }
+      break;
+      
     default:
       break;
   }

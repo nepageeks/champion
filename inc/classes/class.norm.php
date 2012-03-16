@@ -129,9 +129,11 @@ class NORM
    *
    * @return object $this, to allow inline function call
    **/
-  public function order_by($field, $order = 'ASC')
+  public function order_by($field = null, $order = 'ASC')
   {
-    $this->config->order = "`$field` $order";
+    if (!is_null($field)) {
+      $this->config->order = "`$field` $order"; 
+    }
     return $this;
   }
   
@@ -361,7 +363,7 @@ class NORM
     else { $id_field = ($type == 'belongs_to') ? $options['model'].'_id' : strtolower(get_class($this)).'_id'; }
     // Perform search
     list($find, $param) = ($type == 'belongs_to') ? array('find_by_id', $this->$id_field) : array('find_by_'.$id_field, $this->id);
-    $members = $c->$find($param);
+    $members = $c->order_by(@$options['order_by'])->$find($param);
     array_push($this->config->ignore, $class);
     if (empty($members)) { return null; }
     else { return ($type == 'has_many') ? $members : $members[0]; }

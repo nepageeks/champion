@@ -21,9 +21,10 @@ $project = $project->find($_GET['id']);
       <th>Name</th>
     </tr>
     <?php foreach ($project->photos as $photo) { ?>
-      <tr>
+      <tr class="sortable" id="photo_<?=$photo->id?>">
         <td><img src="./image.php?image=<?=urlencode('/photos/'.$project->id.'/'.$photo->name)?>" /></td>
         <td><?=$photo->name?></td>
+        <td><span class="handle">[move]</span></td>
         <td><a href="./functions.php?f=photo_delete&amp;id=<?=$photo->id?>" class="confirm">Delete</a></td>
       </tr>
     <?php } ?>
@@ -38,6 +39,19 @@ $project = $project->find($_GET['id']);
     </tr>
   </table>
 </div>
+
+<script>
+  $('table').sortable({
+    items: '.sortable',
+    handle: '.handle',
+    update: function() {
+      $.post(
+        './functions.php?f=photo_sort',
+        $(this).sortable('serialize')
+      );
+    }
+  });
+</script>
 
 <?php
 include(ROOT.'/inc/admin/footer.php');

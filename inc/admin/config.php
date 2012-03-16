@@ -12,7 +12,7 @@ $admin_links = array(
     ),       
   'Manage Users' => array(
     'path' => 'users',
-    'auth' => 'admin'
+    'auth' => 'su'
     ),       
   'Manage Auth Codes' => array(
     'path' => 'auth_codes',
@@ -20,15 +20,15 @@ $admin_links = array(
     ),       
   'Manage Roles' => array(
     'path' => 'roles',
-    'auth' => 'admin'
+    'auth' => 'su'
     ),       
-  'Edit Blocks' => array(
+  'Edit Text' => array(
     'path' => 'cms',
     'auth' => 'admin'
     ),       
   'Manage Files' => array(
     'path' => 'cms_files',
-    'auth' => 'admin'
+    'auth' => 'su'
     ),    
   'View Contact' => array(
     'path' => 'contact',

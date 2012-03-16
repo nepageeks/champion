@@ -23,7 +23,7 @@ include(ROOT.'/inc/admin/header.php');
   <form id="edit_page_form" action="./functions.php?f=edit" method="post">
     <input type="hidden" name="id" value="<?=$id?>" id="id">
     <p>
-      <textarea name="body"><?=$p['body']?></textarea>
+      <textarea name="body"><?=stripslashes($p['body'])?></textarea>
     </p>
     <p>
       <input type="image" name="submitBtn" value="Save" src="/images/admin/button_save.jpg" id="save_button">

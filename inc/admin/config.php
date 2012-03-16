@@ -37,7 +37,11 @@ $admin_links = array(
   'Testimonials' => array(
     'path' => 'testimonials',
     'auth' => 'admin'
-    ), 
+    ),
+  'Quotes' => array(
+    'path' => 'quotes',
+    'auth' => 'admin'
+    ),
   'Manage Blocks' => array(
     'path' => 'blocks',
     'auth' => 'su'

@@ -32,6 +32,12 @@ switch ($action)
       $URL = '/contact.php';
       break;
       
+    case 'quote':
+      $quote = new Quote;
+      $quote->create($_POST['quote']);
+      $URL = '../quote.php';
+      break;
+      
     default:
       exit;
       break;

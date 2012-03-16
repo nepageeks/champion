@@ -24,6 +24,7 @@ $paginator = new Paginator($projects->find());
     <tr>
       <td><?=$project->title?></td>
 			<td><?=$project->location?></td>
+			<td><a href="photos.php?id=<?=$project->id?>">Photos</a></td>
 			<td><a href="edit.php?id=<?=$project->id?>"><img src="/images/admin/button_edit.jpg" alt="Edit" id="edit_button" /></a></td>
 			<td><a href="delete.php?id=<?=$project->id?>" class="confirm"><img src="/images/admin/button_delete.jpg" alt="Delete" id="delete_button" /></a></td>
     </tr>

@@ -29,6 +29,24 @@ switch ($action)
       $URL = './index.php';
       break;
       
+    case 'photo_add':
+      $upload = new Upload();
+      $upload->SetFileName($_FILES['photo']['name']);
+      $upload->SetTempName($_FILES['photo']['tmp_name']);
+      $upload->SetUploadDirectory(ROOT.'/photos/'.$_POST['project_id'].'/');
+      $upload->SetValidExtensions(array('gif', 'jpg', 'jpeg', 'png'));
+      if ($upload->UploadFile()) {
+        $p = new Photo;
+        $photo['project_id'] = addslashes($_POST['project_id']);
+        $photo['name'] = $upload->GetFileName();
+        $photo['position'] = $p->count + 1;
+        $photo['created_at'] = $todayDate;
+        $photo['updated_at'] = $todayDate;
+        $p->create($photo);
+      }
+      $URL = './photos.php?id='.$_POST['project_id'];
+      break;
+      
     default:
       break;
   }

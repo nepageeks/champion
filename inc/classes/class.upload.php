@@ -152,8 +152,9 @@ class Upload {
         }
 
         if (!is_dir($UploadDirectory)) {
-            $this->SetMessage("ERROR: The directory '$UploadDirectory' does not exist.");
-            return false;
+          mkdir($UploadDirectory);
+            // $this->SetMessage("ERROR: The directory '$UploadDirectory' does not exist.");
+            // return false;
         }
 
         if (!is_writable($UploadDirectory)) {

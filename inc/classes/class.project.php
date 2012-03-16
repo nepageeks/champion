@@ -4,6 +4,7 @@ class Project extends NORM
   public function __construct()
   {
     parent::__construct();
+    $this->has_many('photos');
   }
   
   function _start_date($date) {

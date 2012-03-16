@@ -24,7 +24,7 @@ $project = $project->find($_GET['id']);
       <tr class="sortable" id="photo_<?=$photo->id?>">
         <td><img src="./image.php?image=<?=urlencode('/photos/'.$project->id.'/'.$photo->name)?>" /></td>
         <td><?=$photo->name?></td>
-        <td><span class="handle">[move]</span></td>
+        <td><span class="handle"><img src="/images/drag.png" /></span></td>
         <td><a href="./functions.php?f=photo_delete&amp;id=<?=$photo->id?>" class="confirm">Delete</a></td>
       </tr>
     <?php } ?>

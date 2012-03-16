@@ -33,7 +33,11 @@ $admin_links = array(
   'View Contact' => array(
     'path' => 'contact',
     'auth' => 'admin'
-    ),   
+    ),
+  'Testimonials' => array(
+    'path' => 'testimonials',
+    'auth' => 'admin'
+    ), 
   'Manage Blocks' => array(
     'path' => 'blocks',
     'auth' => 'su'

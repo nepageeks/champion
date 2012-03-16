@@ -24,9 +24,10 @@ include(ROOT.'/inc/header.php');
 <div class="testimonial">
 <div class="testimonial-bg" style="padding-bottom: 50px;">
 
-<big>&#8220;</big>In all aspects, Champion Builders, Inc. performed as the sole responsible General Contractor in a most professional manner. All conditions of the contract were met or exceeded without exception. The projects were constructed per plan and specifications, at the contract price and within the schedule established.<big>&#8221;</big>
+  <?php $testimonial = new Testimonial; $testimonial = $testimonial->random; ?>
+  <big>&#8220;</big><?=$testimonial->text?><big>&#8221;</big>
 
-<span>Gary R. Burcher, Senior Designer, Swendsen Engineering Inc.</span>
+  <span><?=$testimonial->name?>, <?=$testimonial->company?></span>
 
 </div>
 </div>

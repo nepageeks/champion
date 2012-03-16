@@ -48,9 +48,10 @@ include(ROOT.'/inc/header.php');
 <div class="testimonial">
 <div class="testimonial-bg">
 
-<big>&#8220;</big>Champion Builders, Inc., General Contractors, performed in a most successful and satisfactory manner on the institutional health care, elderly residential care, and commercial projects which they have constructed for our Clients. Without exception, Champion Builders would be considered as a qualified, recommended and preferred General Contractor for our future projects.<big>&#8221;</big>
+<?php $testimonial = new Testimonial; $testimonial = $testimonial->random; ?>
+<big>&#8220;</big><?=$testimonial->text?><big>&#8221;</big>
 
-<span>Swendsen Engineering Inc.</span>
+<span><?=$testimonial->name?>, <?=$testimonial->company?></span>
 
 </div>
 </div>

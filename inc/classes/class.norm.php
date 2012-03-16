@@ -87,6 +87,7 @@ class NORM
     } else {
       $query_string = implode(' AND ', $conditions);
       if (!empty($this->config->order)) { $query_string .= ' ORDER BY '.$this->config->order.''; }
+      if (!empty($this->config->limit)) { $query_string .= ' LIMIT '.$this->config->limit.''; }
       $get = mysql_query('SELECT * FROM `'.$this->config->table_name.'` WHERE '.$query_string);
       $members = array();
       while ($m = mysql_fetch_assoc($get)) {
@@ -129,10 +130,19 @@ class NORM
    *
    * @return object $this, to allow inline function call
    **/
-  public function order_by($field = null, $order = 'ASC')
+  public function order_by($field = null, $order = 'ASC', $escape = true)
   {
     if (!is_null($field)) {
-      $this->config->order = "`$field` $order"; 
+      if ($escape) { $field = '`'.$field.'`'; }
+      $this->config->order = "$field $order"; 
+    }
+    return $this;
+  }
+  
+  public function limit($limit)
+  {
+    if (!is_null($limit)) {
+      $this->config->limit = $limit; 
     }
     return $this;
   }

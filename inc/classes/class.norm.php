@@ -375,7 +375,7 @@ class NORM
     list($find, $param) = ($type == 'belongs_to') ? array('find_by_id', $this->$id_field) : array('find_by_'.$id_field, $this->id);
     $members = $c->order_by(@$options['order_by'])->$find($param);
     array_push($this->config->ignore, $class);
-    if (empty($members)) { return null; }
+    if (empty($members)) { return array(); }
     else { return ($type == 'has_many') ? $members : $members[0]; }
   }
   

@@ -8,7 +8,7 @@ $pg = (!empty($_GET['pg'])) ? addslashes($_GET['pg']) : '1';
 
 include(ROOT.'/inc/admin/header.php');
 $getFiles = mysql_query("SELECT * FROM `cms_files`");
-$files = paginate($getFiles);
+$paginator = new Paginator($getFiles);
 ?>
 
 <p><a href="/admin">Back to Admin Home</a></p>
@@ -20,7 +20,7 @@ $files = paginate($getFiles);
     <tr>
       <th>Name</th>
     </tr>
-    <?php foreach ($files[$pg] as $f) {?>
+    <?php foreach ($paginator->this_page() as $f) {?>
     <tr>
       <td><a href="<?=$f['path']?>" target="_blank"><?=$f['name']?></a></td>
 			<td><a href="#"><img src="/images/admin/button_copy.jpg" alt="Copy Path" class="copy_button" /></a></td>
@@ -31,8 +31,8 @@ $files = paginate($getFiles);
 </div>
 
 <div id="prevnext">
-  <?=prev_page($files, '<img src="/images/admin/button_previous.jpg" alt="previous" id="button_previous" />')?>
-  <?=next_page($files, '<img src="/images/admin/button_next.jpg" alt="next" id="button_next" />')?>
+  <?=$paginator->previous('<img src="/images/admin/button_previous.jpg" alt="previous" id="button_previous" />')?>
+  <?=$paginator->next('<img src="/images/admin/button_next.jpg" alt="next" id="button_next" />')?>
 </div>
 
 <script type="text/javascript" src="/inc/zeroclipboard/ZeroClipboard.js"></script>

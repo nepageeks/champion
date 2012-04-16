@@ -9,7 +9,7 @@ $pg = (!empty($_GET['pg'])) ? addslashes($_GET['pg']) : '1';
 include(ROOT.'/inc/admin/header.php');
 
 $auth_codes = new AuthCode;
-$auth_codes = paginate($auth_codes->find());
+$paginator = new Paginator($auth_codes->find());
 ?>
 
 <p><a href="/admin">Back to Admin Home</a></p>
@@ -22,7 +22,7 @@ $auth_codes = paginate($auth_codes->find());
       <th>Code</th>
 			<th>Name</th>
     </tr>
-    <?php foreach ($auth_codes[$pg] as $auth_code) { ?>
+    <?php foreach ($paginator->this_page() as $auth_code) { ?>
     <tr>
       <td><?=$auth_code->code?></td>
 			<td><?=$auth_code->name?></td>
@@ -34,8 +34,8 @@ $auth_codes = paginate($auth_codes->find());
 </div>
 
 <div id="prevnext">
-  <?=prev_page($auth_codes, '<img src="/images/admin/button_previous.jpg" alt="previous" id="button_previous" />')?>
-  <?=next_page($auth_codes, '<img src="/images/admin/button_next.jpg" alt="next" id="button_next" />')?>
+  <?=$paginator->previous('<img src="/images/admin/button_previous.jpg" alt="previous" id="button_previous" />')?>
+  <?=$paginator->next('<img src="/images/admin/button_next.jpg" alt="next" id="button_next" />')?>
 </div>
 
 <?

@@ -9,7 +9,7 @@ $pg = (!empty($_GET['pg'])) ? addslashes($_GET['pg']) : '1';
 include(ROOT.'/inc/admin/header.php');
 
 $roles = new Role;
-$roles = paginate($roles->find());
+$paginator = new Paginator($roles->find());
 ?>
 
 <p><a href="/admin">Back to Admin Home</a></p>
@@ -21,7 +21,7 @@ $roles = paginate($roles->find());
     <tr>
       <th>Name</th>
     </tr>
-    <?php foreach ($roles[$pg] as $role) { ?>
+    <?php foreach ($paginator->this_page() as $role) { ?>
     <tr>
       <td><?=$role->name?></td>
 			<td><a href="edit.php?id=<?=$role->id?>"><img src="/images/admin/button_edit.jpg" alt="Edit" id="edit_button" /></a></td>
@@ -32,8 +32,8 @@ $roles = paginate($roles->find());
 </div>
 
 <div id="prevnext">
-  <?=prev_page($roles, '<img src="/images/admin/button_previous.jpg" alt="previous" id="button_previous" />')?>
-  <?=next_page($roles, '<img src="/images/admin/button_next.jpg" alt="next" id="button_next" />')?>
+  <?=$paginator->previous('<img src="/images/admin/button_previous.jpg" alt="previous" id="button_previous" />')?>
+  <?=$paginator->next('<img src="/images/admin/button_next.jpg" alt="next" id="button_next" />')?>
 </div>
 
 <?

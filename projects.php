@@ -15,7 +15,7 @@ $projects = $projects->find();
 <h2>Projects</h2>
 
 <?php foreach ($projects as $project) { ?>
-<div><a href=""><img src="/photos/<?=$project->id?>/<?=$project->photo->name?>" style="width: 300px; height: 150px;" alt="" /></a>
+<div><a href="./project.php?id=<?=$project->id?>"><img src="/photos/<?=$project->id?>/<?=$project->photo->name?>" style="width: 300px; height: 150px;" alt="" /></a>
   <big><?=$project->title?></big>
   <?=$project->location?> / <?=$project->size?> sq. ft.
   <small><?=$project->type?>, <?=$project->construction?></small>

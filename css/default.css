@@ -513,3 +513,88 @@ color: green;
 label {
   display: block;
 }
+
+.project-details{
+
+width: 910px;
+padding: 25px;
+margin-bottom: -50px;
+overflow: hidden;
+background: white;
+min-height: 500px;
+
+}
+
+.project-details h2{
+
+font-size: 20px;
+border: none;
+margin-left: 5px;
+margin-bottom: 5px;
+}
+
+.project-details div{
+
+width: 440px;
+overflow: hidden;
+float: left;
+
+}
+
+.project-photo{
+
+width: 450px;
+margin-right: 25px;
+
+}
+
+.project-details img{
+
+width: 450px;
+
+}
+
+.project-details table{
+
+border-spacing: 0;
+
+}
+
+.project-details td{
+
+padding: 4px;
+
+}
+
+.project-details .label{
+
+font-weight: bold;
+width: 135px;
+padding-right: 15px;
+color: #016F51;
+
+}
+
+.project-details .blurb{
+
+padding-top: 10px;
+
+}
+
+.project-details .divider{
+
+height: 15px;
+
+}
+
+.project-details .divider div{
+
+height: 1px;
+border-bottom: 1px dotted #ccc;
+display: none;
+
+}
+
+.project-details td.odd{
+background: #efefef;
+}

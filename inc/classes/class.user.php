@@ -63,6 +63,9 @@ class User extends NORM
       if ($params['password'] != $params['confirm']) {
         return 'match';
       }
+      if ($params['password'] == '') {
+        return 'empty';
+      }
       $user = new User;
       $user = $user->find($session->user->id);
       if (md5($params['old']) != $user->password) {

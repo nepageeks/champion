@@ -45,7 +45,11 @@ $admin_links = array(
   'Manage Blocks' => array(
     'path' => 'blocks',
     'auth' => 'su'
-    ));
+    ),
+  'Change Password' => array(
+    'path' => 'password',
+    'auth' => 'admin'
+  ));
 
 // ================
 // = Admin Config =

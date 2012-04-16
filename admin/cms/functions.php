@@ -11,6 +11,7 @@ switch ($action)
     case 'edit':
       $id = addslashes($_POST['id']);
       $p['body'] = addslashes($_POST['body']);
+      $p['title'] = addslashes($_POST['title']);
       $p['updated_at'] = $todayDate;
       $putPage  = 'UPDATE `cms_blocks` SET ';
       foreach ($p as $key => $value) {

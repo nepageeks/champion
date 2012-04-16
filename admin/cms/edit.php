@@ -17,10 +17,12 @@ include(ROOT.'/inc/admin/header.php');
 	<p><a href="/admin">Back to Admin Home</a></p>
 	<p><a href="./">Back to Edit Blocks</a></p>
 	
-	<h2><?=stripslashes($p['title'])?></h2>
-	<p><?=stripslashes($p['description'])?></p>
-	
   <form id="edit_page_form" action="./functions.php?f=edit" method="post">
+	  
+	  <label for="title">Title</label>
+  	<input type="text" name="title" value="<?=stripslashes($p['title'])?>" id="title">
+  	<p><?=stripslashes($p['description'])?></p>
+	
     <input type="hidden" name="id" value="<?=$id?>" id="id">
     <p>
       <textarea name="body"><?=stripslashes($p['body'])?></textarea>

@@ -10,6 +10,8 @@ include(ROOT.'/inc/header.php');
 <div class="sub-content">
 
 <div class="sub-sidebar">
+  
+<h2><?=BasicCms::title('healthcare')?></h2>
 
 <?=BasicCms::block('healthcare')?>
 

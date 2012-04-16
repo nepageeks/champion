@@ -11,6 +11,8 @@ include(ROOT.'/inc/header.php');
 
 <div class="sub-sidebar">
 
+<h2><?=BasicCms::title('employment')?></h2>
+
 <?=BasicCms::block('employment')?>
 
 </div>

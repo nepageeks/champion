@@ -10,6 +10,8 @@ include(ROOT.'/inc/header.php');
 <div class="sub-content">
 <div class="sub-sidebar" style="height: 550px;">
 
+<h2><?=BasicCms::title('contact')?></h2>
+
 <?=BasicCms::block('contact')?>
 
 </div>

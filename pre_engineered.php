@@ -11,6 +11,8 @@ include(ROOT.'/inc/header.php');
 
 <div class="sub-sidebar">
 
+<h2><?=BasicCms::title('pre_engineered')?></h2>
+
 <?=BasicCms::block('pre_engineered')?>
 
 </div>

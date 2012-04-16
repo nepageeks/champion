@@ -1,6 +1,13 @@
 <?php
 class BasicCms
   {
+    public function title($name_id)
+    {
+      $type = is_numeric($name_id) ? 'first_by_id' : 'first_by_name';
+      $block = new CmsBlock;
+      $block = $block->$type($name_id);
+      return $block->title;
+    }
     public function block($name_id)
     {
       include_once ROOT.'/inc/markitup/parsers/inc.markdown.php';

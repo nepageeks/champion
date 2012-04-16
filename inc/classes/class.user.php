@@ -47,6 +47,7 @@ class User extends NORM
       $user = new User;
       $user = $user->find(array("`email` = '$email'"));
     	if (empty($user)) {
+    	  Flash::add('error', 'Could not find a user with that email');
     		return 'nouser'; break;
     	}
     	$user = $user[0];
@@ -54,6 +55,7 @@ class User extends NORM
     	$array['password'] = md5($new_password);
     	$user->update($array);
     	mail($email, 'Your New Password', 'Your new password is: '.$new_password, 'From: donotreply@donotreply.com');
+    	Flash::add('success', 'A new password has been sent to your email');
     	return 'success';
     }
     

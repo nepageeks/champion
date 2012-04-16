@@ -34,6 +34,10 @@ $contact = $contact->find($_GET['id']);
     <strong>Message</strong>: <br />
     <?=nl2br($contact->message)?>
   </p>
+  <p>
+    <strong>Notes</strong>: (<a href="./notes.php?id=<?=$contact->id?>">edit</a>) <br />
+    <?=nl2br($contact->notes)?>
+  </p>
 </div>
 
 <?php

@@ -19,7 +19,7 @@ $contact = $contact->find($_GET['id']);
     <strong>Notes</strong>: <br />
     <form action="./functions.php?f=notes" method="post">
       <input type="hidden" name="id" value="<?=$contact->id?>" id="id">
-      <textarea name="notes"><?=nl2br($contact->notes)?></textarea>
+      <textarea name="notes"><?=strip_tags(nl2br($contact->notes))?></textarea>
       <br />
       <input type="submit" name="submit" value="Save" id="submit" />
     </form>

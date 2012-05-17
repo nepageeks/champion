@@ -19,9 +19,9 @@ define('PROJECT_NAME', 'Champion Builders, Inc.');
 // ========================
 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'champion');
-define('DB_PASS', 'psswd123');
-define('DB_NAME', 'champion');
+define('DB_USER', 'creative_champ');
+define('DB_PASS', 'p-ov@!H4~TJg');
+define('DB_NAME', 'creative_site');
 if (@$db_load !== false) { include(ROOT.'/inc/opendb.php'); }
 
 // ===========

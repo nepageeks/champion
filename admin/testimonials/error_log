@@ -1,0 +1,21 @@
+[16-Mar-2012 13:54:04] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 13:54:04] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 13:54:04] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/creative/public_html/inc/classes/class.norm.php:420) in /home/creative/public_html/admin/testimonials/functions.php on line 36
+[16-Mar-2012 13:54:45] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 13:54:45] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 13:54:45] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/creative/public_html/inc/classes/class.norm.php:420) in /home/creative/public_html/admin/testimonials/functions.php on line 36
+[16-Mar-2012 13:55:05] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 13:55:06] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 13:55:06] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/creative/public_html/inc/classes/class.norm.php:420) in /home/creative/public_html/admin/testimonials/functions.php on line 36
+[16-Mar-2012 14:44:41] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 14:44:41] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 14:44:41] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/creative/public_html/inc/classes/class.norm.php:420) in /home/creative/public_html/admin/testimonials/functions.php on line 36
+[16-Mar-2012 14:46:53] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 14:46:53] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 14:46:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/creative/public_html/inc/classes/class.norm.php:420) in /home/creative/public_html/admin/testimonials/functions.php on line 36
+[16-Mar-2012 14:47:02] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 14:47:02] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 14:47:02] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/creative/public_html/inc/classes/class.norm.php:420) in /home/creative/public_html/admin/testimonials/functions.php on line 36
+[16-Mar-2012 14:59:05] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 14:59:05] PHP Warning:  Invalid argument supplied for foreach() in /home/creative/public_html/inc/classes/class.norm.php on line 420
+[16-Mar-2012 14:59:05] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/creative/public_html/inc/classes/class.norm.php:420) in /home/creative/public_html/admin/testimonials/functions.php on line 36

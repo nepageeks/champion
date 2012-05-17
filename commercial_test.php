@@ -16,7 +16,7 @@ include(ROOT.'/inc/header.php');
 
 $projects = new Project;
 
-$projects = $projects->find();
+$projects = $projects->limit(3)->find_by_type('Commercial');
 
 ?>
 

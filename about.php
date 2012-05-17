@@ -10,8 +10,6 @@ include(ROOT.'/inc/header.php');
 <div class="sub-content">
 <div class="sub-sidebar">
 
-<h2><?=BasicCms::title('about')?></h2>
-
 <?=BasicCms::block('about')?>
 	
 </div>

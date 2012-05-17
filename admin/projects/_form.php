@@ -7,6 +7,7 @@
 <?=$form->input(array('for' => 'completion_date', 'classes' => array('date')))?>
 <?=$form->input(array('for' => 'status'))?>
 <?=$form->textarea(array('for' => 'description'))?>
+<?=$form->select(array('for' => 'progress', 'text' => array('In-Progress', 'Completed'), 'blank' => true))?>
 
 <script>
   $('.date').datepicker();

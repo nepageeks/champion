@@ -18,7 +18,7 @@ $now = date('Y');
 if ($then == $now)
 echo $now;
 else
-echo "$then - $now"; ?> Champion Builders, Inc.  &nbsp;|&nbsp; Site by <a href="http://www.blacklocustdesign.com" title="Black Locust Design" target="_blank">Black Locust Design</a> / <a href="http://www.patrickgensel.com/" title="Patrick Gensel" target="_blank">Patrick Gensel</a> &nbsp;|&nbsp; Hosting by <a href="http://www.nepageeks.com/" title="NEPA Geeks" target="_blank">NEPA Geeks</a>  &nbsp;|&nbsp; <a href="sitemap.php" title="Sitemap">Sitemap</a>
+echo "$then - $now"; ?> Champion Builders, Inc.  &nbsp;|&nbsp; Site by <a href="http://www.blacklocustdesign.com" title="Black Locust Design" target="_blank">Black Locust Design</a> / <a href="http://www.patrickgensel.com/" title="Patrick Gensel Digital Media" target="_blank">Patrick Gensel Digital Media</a>  &nbsp;|&nbsp; <a href="sitemap.php" title="Sitemap">Sitemap</a>
 
 </div>
 </body>

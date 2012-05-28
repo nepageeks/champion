@@ -1,11 +1,5 @@
-php_flag magic_quotes_gpc Off
-
 ErrorDocument 400 /errors/400.php
-
 ErrorDocument 401 /errors/401.php
-
 ErrorDocument 403 /errors/403.php
-
 ErrorDocument 404 /errors/404.php
-
 ErrorDocument 500 /errors/500.php

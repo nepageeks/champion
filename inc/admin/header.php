@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>Champion Builders Admin</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="/css/admin.css" type="text/css" media="screen" charset="utf-8" />
     <?php
     if (isset($stylesheets))

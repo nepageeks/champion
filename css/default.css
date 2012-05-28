@@ -1,1199 +1,600 @@
 @charset "UTF-8";
-
 /* CSS Document */
-
-
 
 html, body{
 
-
-
 margin: 0;
-
 padding: 0;
 
-
-
 }
-
-
 
 html{
 
-
-
 background: #e5e5e5 url(../images/body-bg.png) no-repeat top center;
 
-
-
 }
-
-
 
 body{
 
-
-
 font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-
 font-size: 12px;
-
 /*background: #dddcd6 url(../images/top-grad.png) repeat-x top left;*/
-
 background: url(../images/bg-horizontal.png) repeat-x top left;
-
 overflow: scroll;
 
-
-
 }
-
-
 
 a, a img{
 
-
-
 border: none;
 
-
-
 }
-
-
 
 h2{
 
-
-
 font-family: Crillee, 'Open Sans', Arial, Helvetica, sans-serif;
-
 letter-spacing: .4px;
-
 margin-top: 20px;
-
 color: #016f51;
-
 border-bottom: 1px solid #016f51;
-
 line-height: 18px;
 
-
-
 }
-
-
 
 .container{
 
-
-
 width: 960px;
-
 margin: 20px auto 0;
-
 background: #e5e5e5;
 
-
-
 }
-
-
 
 .green{
 
-
-
 background: #01916b url(../images/green-bg.jpg) repeat-y bottom right;
 
-
-
 }
-
-
 
 .header{
 
-
-
 background: url(../images/header-bg.jpg) no-repeat left;
-
 height: 90px;
-
 overflow: hidden;
 
-
-
 }
-
-
 
 .slogan{
 
-
-
 font-family: Crillee, 'Open Sans', Arial, Helvetica, sans-serif;
-
 letter-spacing: .4px;
-
 line-height: 28px;
-
 width: 620px;
-
 text-align: center;
-
 float: right;
-
 color: #fffffe;
-
 margin: 25px 0 0;
-
 font-size: 18px;
 
-
-
 }
-
-
 
 .slogan small{
 
-
-
 font-size: 14px;
-
 line-height: 12px;
 
-
-
 }
-
-
 
 .logo{
 
-
-
 padding: 10px;
 
-
-
 }
-
-
 
 .nav{
 
-
-
 height: 31px;
-
 overflow: hidden;
-
 background: #505050 url(../images/nav-bg.png) repeat-x bottom left;
 
-
-
 }
-
-
 
 .nav ul, .nav li{
 
-
-
 list-style: none;
-
 float: left;
-
 margin: 0;
-
 padding: 0;
 
-
-
 }
-
-
 
 .nav li{
 
-
-
 background: url(../images/nav-divider.png) no-repeat right;
-
 text-align: center;
 
-
-
 }
-
-
 
 .nav a{
 
-
-
 color: #fffffe;
-
 text-decoration: none;
-
 text-transform: uppercase;
-
 display: block;
-
 padding: 6px 0;
 
-
-
 }
-
-
 
 .nav a:hover{
 
-
-
 background: #333;
 
-
-
 }
-
-
 
 #currentpage{
 
-
-
 background: #222
-
  
-
 }
-
-
 
 .banner{
 
-
-
 height: 225px;
-
 overflow: hidden;
-
 z-index: 0;
 
-
-
 }
-
-
 
 .content, .sub-content{
 
-
-
 overflow: hidden;
-
 margin-bottom: -50px;
 
-
-
 }
-
-
 
 .projects{
 
-
-
 width: 920px;
-
 padding: 0 15px 35px 25px;
-
 margin-bottom: -50px;
-
 overflow: hidden;
-
 background: white;
 
-
-
 }
-
-
 
 .projects img{
 
-
-
 display: block;
-
 width: 296px;
 
-
-
 }
-
-
 
 .projects div{
 
-
-
 width: 300px;
-
 height: 245px;
-
 overflow: hidden;
-
 margin: 0 3px;
-
 float: left;
-
 margin-bottom: 3px;
 
-
-
 }
-
-
 
 .projects big{
 
-
-
 font-weight: bold;
-
 display: block;
-
 margin-top: 5px;
 
-
-
 }
-
-
 
 .projects small{
 
-
-
 font-size: 10px;
-
 display: block;
 
-
-
 }
-
-
 
 .projects span{
 
-
-
 font-size: 10px;
 
-
-
 }
-
-
 
 .projects span b{
 
-
-
 color: green;
-
 font-size: 11px;
 
-
-
 }
-
-
 
 .sidebar{
 
-
-
 width: 320px;
-
 float: left;
-
 position: relative;
-
 line-height: 15px;
 
-
-
 }
-
-
 
 .sub-sidebar{
 
-
-
 background: white url(../images/sidebar-bg.png) repeat-y right;
-
 width: 270px;
-
 min-height: 380px;
-
 float: left;
-
 padding: 0 25px 25px;
 
-
-
 }
-
-
 
 .sidebar ul li, .sub-sidebar ul li{
 
-
-
 font-style: italic;
-
 margin: 5px 0;
 
-
-
 }
-
-
 
 .overlap{
 
-
-
 width: 270px;
-
 position: absolute;
-
 top: -200px;
-
 background: url(../images/sidebar-grad.png) no-repeat top right;
-
 padding: 85px 25px 25px;
-
 height: 384px;
-
 overflow: hidden;
-
 /*-moz-box-shadow: 2px 4px 12px #111;*/
 
-
-
 }
-
-
 
 .sub{
 
-
-
 top: -126px;
 
-
-
 }
-
-
 
 .readmore{
 
-
-
 text-align: right;
 
-
-
 }
-
-
 
 .readmore, .readmore a{
 
-
-
 color: #016f51;
-
 font-weight: bold;
 
-
-
 }
-
-
 
 .readmoreimg{
 
-
-
 height: 0;
 
-
-
 }
-
-
 
 .readmoreimg img{
 
-
-
 position: relative;
-
 top: 325px;
-
 right: 0;
 
-
-
 }
-
-
 
 .banners{
 
-
-
 background: #e5e5e5 url(../images/top-shadow.png) repeat-x top left;
-
 padding: 10px;
-
 width: 620px;
-
 float: right;
 
-
-
 }
-
-
 
 .banners a img{
 
-
-
 margin: 6px;
-
 float: left;
 
-
-
 }
-
-
 
 .testimonial{
 
-
-
 overflow: hidden;
-
 background: url(../images/testimonial-bg_point.png) no-repeat left bottom;
 
-
-
 }
-
-
 
 .small-test .testimonial{
 
-
-
 background: url(../images/testimonial-bg_point-small-green.png) no-repeat left bottom;
 
-
-
 }
-
-
 
 .testimonial span{
 
-
-
 float: right;
-
 font-weight: bold;
-
 margin-top: 12px;
-
 width: 100%;
-
 text-align: right;
 
-
-
 }
-
-
 
 .testimonial span:before{
 
-
-
 content: "- ";
 
-
-
 }
-
-
 
 .testimonial-bg{
 
-
-
 background: url(../images/testimonial-bg.png) no-repeat top left;
-
 font-size: 13px;
-
 color: #fffffe;
-
 padding: 25px 50px 45px;
-
 font-style: italic;
-
 display: block;
-
 margin-bottom: 50px;
 
-
-
 }
-
-
 
 .small-test .testimonial-bg{
 
-
-
 background: url(../images/testimonial-bg-small-green.png) no-repeat top left;
 
-
-
 }
-
-
 
 .testimonial-bg big{
 
-
-
 font-family: Metrophobic;
-
 font-size: 42px;
-
 line-height: 0;
-
 position: relative;
-
 top: 14px;
-
 margin: 0 5px;
 
-
-
 }
-
-
 
 .footer{
 
-
-
 background: url(../images/footer-bg.png) no-repeat bottom left;
-
 height: 140px;
-
 position: relative;
-
 font-size: 13px;
 
-
-
 }
-
-
 
 .footer .left, .footer .right{
 
-
-
 width: 320px;
-
 position: absolute;
-
 bottom: 0;
-
 color: #fffffe;
-
 margin: 27px 25px;
 
-
-
 }
-
-
 
 .footer a{
 
-
-
 color: #f89829;
 
-
-
 }
-
-
 
 .footer .left{
 
-
-
 left: 0;
 
-
-
 }
-
-
 
 .footer .right{
 
-
-
 right: 0;
-
 text-align: right;
 
-
-
 }
-
-
 
 .copyright{
 
-
-
 width: 960px;
-
 margin: 15px auto;
-
 font-size: 12px;
-
 text-align: center;
 
-
-
 }
-
-
 
 .copyright a{
 
-
-
 color: green;
 
-
-
 }
-
-
 
 .subpage{
 
-
-
 background: url(../images/banner1.jpg) no-repeat bottom left;
-
 height: 200px;
 
-
-
 }
-
-
 
 .contact{
 
-
-
 	background: #505050 /* url(../images/contact-bg.png) */;
-
     color: #fffffe;
-
     font-size: 13px;
-
     margin: 25px;
-
     padding: 25px 25px 35px;
-
     width: 525px;
 
-
-
 }
-
-
 
 input, textarea{
 
-
-
 font-family: Metrophobic, Arial, Helvetica, sans-serif;
-
 font-size: 13px;
 
 
-
-
-
 }
-
-
 
 textarea{
 
-
-
 resize: none;
-
 padding: 5px;
 
-
-
 }
-
-
 
 .bottom-spacer{
 
-
-
 height: 125px;
-
 margin-top: 70px;
 
-
-
 }
-
-
 
 .slideshow {
 
-
-
 height: 225px;
-
 width: 960px;
-
 margin: auto;
-
 background: black;
-
 z-index: 0;
 
-
-
 }
-
-
 
 .slideshow img {}
 
-
-
 .more-projects{
 
-
-
 bottom: -196px;
-
 float: right;
-
 height: 0;
-
 position: relative;
-
 right: -15px;
 
-
-
 }
-
-
 
 .more-projects img{
 
-
-
 position: relative;
-
 z-index: 1;
 
-
-
 }
-
-
 
 .sitemap{
 
-
-
 width: 920px;
-
 padding: 0 15px 35px 25px;
-
 margin-bottom: -50px;
-
 overflow: hidden;
-
 background: white;
-
 height: 350px;
 
-
-
 }
-
-
 
 .sitemap div{
 
-
-
 width: 175px;
-
 padding: 0 25px;
-
 float: left;
-
 border-right: 1px dotted #ccc;
-
 height: 200px;
 
-
-
 }
-
-
 
 .sitemap ul{
 
-
-
 list-style: none;
-
 padding: 0;
-
 margin: 0;
 
-
-
 }
-
-
 
 .sitemap a{
 
-
-
 color: green;
 
-
-
 }
-
-
 
 label {
-
   display: block;
-
 }
-
-
 
 .project-details{
 
-
-
 width: 910px;
-
 padding: 25px;
-
 margin-bottom: -50px;
-
 overflow: hidden;
-
 background: white;
-
 min-height: 500px;
 
-
-
 }
-
-
 
 .project-details h2{
 
-
-
 font-size: 20px;
-
 border: none;
-
 margin-left: 5px;
-
 margin-bottom: 5px;
-
 }
-
-
 
 .project-details div{
 
-
-
 width: 440px;
-
 overflow: hidden;
-
 float: left;
 
-
-
 }
-
-
 
 .project-photo{
 
-
-
 width: 450px;
-
 margin-right: 25px;
 
-
-
 }
-
-
 
 .project-details img{
 
-
-
 width: 450px;
 
-
-
 }
-
-
 
 .project-details table{
 
-
-
 border-spacing: 0;
 
-
-
 }
-
-
 
 .project-details td{
 
-
-
 padding: 4px;
 
-
-
 }
-
-
 
 .project-details .label{
 
-
-
 font-weight: bold;
-
 width: 135px;
-
 padding-right: 15px;
-
 color: #016F51;
 
-
-
 }
-
-
 
 .project-details .blurb{
 
-
-
 padding-top: 10px;
 
-
-
 }
-
-
 
 .project-details .divider{
 
-
-
 height: 15px;
 
-
-
 }
-
-
 
 .project-details .divider div{
 
-
-
 height: 1px;
-
 border-bottom: 1px dotted #ccc;
-
 display: none;
-
-
 
 }
 
-
-
 .project-details td.odd{
-
 background: #efefef;
-
 }

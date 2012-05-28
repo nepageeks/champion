@@ -1,3 +1,0 @@
-[16-Apr-2012 23:04:51] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in /home/creative/public_html/inc/classes/class.user_session.php on line 60
-[16-Apr-2012 23:04:51] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in /home/creative/public_html/inc/classes/class.user_session.php on line 79
-[16-Apr-2012 23:04:51] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/creative/public_html/inc/classes/class.user_session.php:60) in /home/creative/public_html/inc/classes/class.user_session.php on line 72

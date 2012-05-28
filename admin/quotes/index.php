@@ -23,7 +23,7 @@ $paginator = new Paginator($quotes->find());
     <?php foreach ($paginator->this_page() as $quote) { ?>
     <tr>
       <td><?=$quote->name?></td>
-			<td><?=$quote->business_name?></td>
+			<td><?=$quote->company?></td>
 			<td><a href="edit.php?id=<?=$quote->id?>"><img src="/images/admin/button_edit.jpg" alt="Edit" id="edit_button" /></a></td>
 			<td><a href="delete.php?id=<?=$quote->id?>" class="confirm"><img src="/images/admin/button_delete.jpg" alt="Delete" id="delete_button" /></a></td>
     </tr>

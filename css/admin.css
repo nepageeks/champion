@@ -1,213 +1,213 @@
-@import url("/css/master.css");
-
-#admin_header {
-  background: url(/images/admin/header_bkg.jpg) repeat-x;
-  height: 83px;
-  font-family: "trebuchet ms", verdana, sans-serif;
-  font-size: 12px;
-}
-#admin_header_content {
-  width: 940px;
-  margin: auto;
-}
-#admin_logo {
-  margin-top: 17px;
-  float: left;
-}
-#admin_logo p {
-  position: absolute;
-  top: 0;
-  font-size: 30px;
-}
-#admin_header_content a{
-  color: #FFF;
-  text-decoration: none;
-  font-weight: bold;
-}
-#admin_header_content p{
-  float: right;
-  color: #FFF;
-  margin-top: 35px;
-}
-#admin table th {
-  text-align: left;
-}
-#admin {
-  background: #EAEAEA;
-}
-/**************************************************************************basics***/
-#admin_body {
-  width: 945px;
-  margin: auto;
-  font-family: "trebuchet ms", verdana, sans-serif;
-  font-size: 12px;
-  color: #666;
-}
-#admin_body a {
-  color: #888;
-  text-decoration: none;
-}
-#admin_body a:hover {
-  color: #222;
-}
-#admin h1 {
-  font-size: 15px;
-  margin: 10px 0;
-}
-#button_previous {
-  float: left;
-}
-#button_next {
-  float: right;
-}
-#prevnext {
-  height: 20px;
-  margin-top: 10px;
-}
-#save_button {
-  margin-top: 10px;
-  margin-left: 28px;
-}
-/*****************************************************************************nav***/
-
-#admin_nav {
-  float: left;
-  width: 268px;
-  margin-top: 34px;
-}
-#admin_nav_top {
-  background: url(/images/admin/nav_top.jpg) no-repeat;
-  height: 14px;
-  width: 268px;
-}
-#admin_nav_middle {
-  background: url(/images/admin/nav_middle.jpg) repeat-y;
-  height: auto !important;
-  min-height: 100px;
-  width: 268px;
-}
-#admin_nav_bottom {
-  background: url(/images/admin/nav_bottom.jpg) no-repeat;
-  height: 14px;
-  width: 268px;
-}
-#admin_nav ul {
-	margin: 0;
-}
-#admin_nav li {
-  background: url(/images/admin/category.jpg) no-repeat;
-  width: 236px;
-  height: 33px;
-  margin-left: 15px;
-  padding-top: 11px;
-  padding-left: 10px;
-  list-style: none;
-}
-#admin_nav li a {
-  color: #FFF;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  display: block;
-}
-#admin_nav li a:hover {
-  color: #F1F1F1;
-}
-
-#admin_nav li:last-child {
-	padding-bottom: 10px;
-}
-/**************************************************************************box***/
-#admin_box {
-  float: right;
-  margin-top: 30px;
-	width: 667px;
-	background: url(/images/admin/adminbox_body-r.png) no-repeat bottom right;
-}
-#box_head {
-	background: url(/images/admin/adminbox_head-r.png) no-repeat top right;
-  position: relative;
-  height: 51px;
-}
-#box_head h1 {
-	background: url(/images/admin/adminbox_head-l.png) no-repeat top left;
-	position: absolute;
-	left: 0;
-	top: 0;
-	padding-top: 15px;
-	padding-left: 15px;
-  font-size: 18px;
-  margin: 0;
-  height: 51px;
-  color: white;
-  font-weight: normal;
-}
-#box_head h2 {
-	position: absolute;
-	right: 0;
-	top: 0;
-  font-size: 14px;
-  padding-top: 17px;
-  padding-right: 15px;
-  color: white;
-  font-weight: normal;
-}
-#box_body {
-	background: url(/images/admin/adminbox_body-l.png) no-repeat bottom left;
-	padding: 10px 17px 65px 17px;
-  line-height: 15px;
-	width: 667px;
-}
-/************************************************************************table***/
-#box_body table tr td {
-  vertical-align: top;
-  padding: 5px;
-}
-#box_body table tr th {
-  padding: 5px;
-}
-#box_body table tr {
-  border-bottom: 1px solid #EFEFEF;
-}
-#button_add {
-  margin-bottom: 15px;
-}
-
-/*************************************************************************nav box***/
-
-#admin_nav {
-	background: url(/images/admin/boxbody-r.png) no-repeat bottom right;
-}
-#nav_head {
-	background: url(/images/admin/boxhead-r.png) no-repeat top right;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
-#nav_head h2 {
-	background: url(/images/admin/boxhead-l.png) no-repeat top left;
-	margin: 0;
-	padding: 10px;
-	color: black; 
-	font-weight: bold; 
-	font-size: 1.2em; 
-	line-height: 1em;
-}
-#nav_body {
-	background: url(/images/admin/boxbody-l.png) no-repeat bottom left;
-	margin: 0;
-/*	padding: 5px 30px 31px;*/
-}
-#nav_body h2 {
-	text-align: center;
-	margin: 0;
-	padding: 10px;
-	color: black; 
-	font-weight: bold; 
-	font-size: 1.2em; 
-	line-height: 1em;
-}
-
-.handle {
-  cursor: pointer;
+@import url("/css/master.css");
+
+#admin_header {
+  background: url(/images/admin/header_bkg.jpg) repeat-x;
+  height: 83px;
+  font-family: "trebuchet ms", verdana, sans-serif;
+  font-size: 12px;
+}
+#admin_header_content {
+  width: 940px;
+  margin: auto;
+}
+#admin_logo {
+  margin-top: 17px;
+  float: left;
+}
+#admin_logo p {
+  position: absolute;
+  top: 0;
+  font-size: 30px;
+}
+#admin_header_content a{
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+#admin_header_content p{
+  float: right;
+  color: #FFF;
+  margin-top: 35px;
+}
+#admin table th {
+  text-align: left;
+}
+#admin {
+  background: #EAEAEA;
+}
+/**************************************************************************basics***/
+#admin_body {
+  width: 945px;
+  margin: auto;
+  font-family: "trebuchet ms", verdana, sans-serif;
+  font-size: 12px;
+  color: #666;
+}
+#admin_body a {
+  color: #888;
+  text-decoration: none;
+}
+#admin_body a:hover {
+  color: #222;
+}
+#admin h1 {
+  font-size: 15px;
+  margin: 10px 0;
+}
+#button_previous {
+  float: left;
+}
+#button_next {
+  float: right;
+}
+#prevnext {
+  height: 20px;
+  margin-top: 10px;
+}
+#save_button {
+  margin-top: 10px;
+  margin-left: 28px;
+}
+/*****************************************************************************nav***/
+
+#admin_nav {
+  float: left;
+  width: 268px;
+  margin-top: 34px;
+}
+#admin_nav_top {
+  background: url(/images/admin/nav_top.jpg) no-repeat;
+  height: 14px;
+  width: 268px;
+}
+#admin_nav_middle {
+  background: url(/images/admin/nav_middle.jpg) repeat-y;
+  height: auto !important;
+  min-height: 100px;
+  width: 268px;
+}
+#admin_nav_bottom {
+  background: url(/images/admin/nav_bottom.jpg) no-repeat;
+  height: 14px;
+  width: 268px;
+}
+#admin_nav ul {
+	margin: 0;
+}
+#admin_nav li {
+  background: url(/images/admin/category.jpg) no-repeat;
+  width: 236px;
+  height: 33px;
+  margin-left: 15px;
+  padding-top: 11px;
+  padding-left: 10px;
+  list-style: none;
+}
+#admin_nav li a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+}
+#admin_nav li a:hover {
+  color: #F1F1F1;
+}
+
+#admin_nav li:last-child {
+	padding-bottom: 10px;
+}
+/**************************************************************************box***/
+#admin_box {
+  float: right;
+  margin-top: 30px;
+	width: 667px;
+	background: url(/images/admin/adminbox_body-r.png) no-repeat bottom right;
+}
+#box_head {
+	background: url(/images/admin/adminbox_head-r.png) no-repeat top right;
+  position: relative;
+  height: 51px;
+}
+#box_head h1 {
+	background: url(/images/admin/adminbox_head-l.png) no-repeat top left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding-top: 15px;
+	padding-left: 15px;
+  font-size: 18px;
+  margin: 0;
+  height: 51px;
+  color: white;
+  font-weight: normal;
+}
+#box_head h2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+  font-size: 14px;
+  padding-top: 17px;
+  padding-right: 15px;
+  color: white;
+  font-weight: normal;
+}
+#box_body {
+	background: url(/images/admin/adminbox_body-l.png) no-repeat bottom left;
+	padding: 10px 17px 65px 17px;
+  line-height: 15px;
+	width: 667px;
+}
+/************************************************************************table***/
+#box_body table tr td {
+  vertical-align: top;
+  padding: 5px;
+}
+#box_body table tr th {
+  padding: 5px;
+}
+#box_body table tr {
+  border-bottom: 1px solid #EFEFEF;
+}
+#button_add {
+  margin-bottom: 15px;
+}
+
+/*************************************************************************nav box***/
+
+#admin_nav {
+	background: url(/images/admin/boxbody-r.png) no-repeat bottom right;
+}
+#nav_head {
+	background: url(/images/admin/boxhead-r.png) no-repeat top right;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#nav_head h2 {
+	background: url(/images/admin/boxhead-l.png) no-repeat top left;
+	margin: 0;
+	padding: 10px;
+	color: black; 
+	font-weight: bold; 
+	font-size: 1.2em; 
+	line-height: 1em;
+}
+#nav_body {
+	background: url(/images/admin/boxbody-l.png) no-repeat bottom left;
+	margin: 0;
+/*	padding: 5px 30px 31px;*/
+}
+#nav_body h2 {
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	color: black; 
+	font-weight: bold; 
+	font-size: 1.2em; 
+	line-height: 1em;
+}
+
+.handle {
+  cursor: pointer;
 }

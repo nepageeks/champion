@@ -1,3 +1,5 @@
 ruckusing/logs/*
 photos/*
 .DS_Store
+
+inc/config.php

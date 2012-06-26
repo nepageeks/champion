@@ -7,7 +7,9 @@ $title="Projects";
 include(ROOT.'/inc/header.php');
 
 $projects = new Project;
-$projects = $projects->find();
+
+$projects = $projects->limit(12)->find();
+
 ?>
 
 <div class="projects">
